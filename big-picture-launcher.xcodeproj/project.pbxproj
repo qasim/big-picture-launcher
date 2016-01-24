@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CEA21A81C5A863300E0FAA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */; };
+		9CEA21AA1C5A863300E0FAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */; };
+		9CEA21AD1C5A863300E0FAA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */; };
+		9CEA21B81C5A863300E0FAA3 /* big_picture_launcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CEA21B41C5A863300E0FAA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CEA219C1C5A863300E0FAA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CEA21A31C5A863300E0FAA3;
+			remoteInfo = "big-picture-launcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "big-picture-launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CEA21AC1C5A863300E0FAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9CEA21AE1C5A863300E0FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "big-picture-launcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = big_picture_launcherTests.swift; sourceTree = "<group>"; };
+		9CEA21B91C5A863300E0FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CEA21A11C5A863300E0FAA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA21B01C5A863300E0FAA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CEA219B1C5A863300E0FAA3 = {
+			isa = PBXGroup;
+			children = (
+				9CEA21A61C5A863300E0FAA3 /* big-picture-launcher */,
+				9CEA21B61C5A863300E0FAA3 /* big-picture-launcherTests */,
+				9CEA21A51C5A863300E0FAA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CEA21A51C5A863300E0FAA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */,
+				9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CEA21A61C5A863300E0FAA3 /* big-picture-launcher */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */,
+				9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */,
+				9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */,
+				9CEA21AE1C5A863300E0FAA3 /* Info.plist */,
+			);
+			path = "big-picture-launcher";
+			sourceTree = "<group>";
+		};
+		9CEA21B61C5A863300E0FAA3 /* big-picture-launcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */,
+				9CEA21B91C5A863300E0FAA3 /* Info.plist */,
+			);
+			path = "big-picture-launcherTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CEA21A31C5A863300E0FAA3 /* big-picture-launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CEA21BC1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcher" */;
+			buildPhases = (
+				9CEA21A01C5A863300E0FAA3 /* Sources */,
+				9CEA21A11C5A863300E0FAA3 /* Frameworks */,
+				9CEA21A21C5A863300E0FAA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "big-picture-launcher";
+			productName = "big-picture-launcher";
+			productReference = 9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CEA21B21C5A863300E0FAA3 /* big-picture-launcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CEA21BF1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcherTests" */;
+			buildPhases = (
+				9CEA21AF1C5A863300E0FAA3 /* Sources */,
+				9CEA21B01C5A863300E0FAA3 /* Frameworks */,
+				9CEA21B11C5A863300E0FAA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CEA21B51C5A863300E0FAA3 /* PBXTargetDependency */,
+			);
+			name = "big-picture-launcherTests";
+			productName = "big-picture-launcherTests";
+			productReference = 9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CEA219C1C5A863300E0FAA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Qasim Iqbal";
+				TargetAttributes = {
+					9CEA21A31C5A863300E0FAA3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9CEA21B21C5A863300E0FAA3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9CEA21A31C5A863300E0FAA3;
+					};
+				};
+			};
+			buildConfigurationList = 9CEA219F1C5A863300E0FAA3 /* Build configuration list for PBXProject "big-picture-launcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CEA219B1C5A863300E0FAA3;
+			productRefGroup = 9CEA21A51C5A863300E0FAA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CEA21A31C5A863300E0FAA3 /* big-picture-launcher */,
+				9CEA21B21C5A863300E0FAA3 /* big-picture-launcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CEA21A21C5A863300E0FAA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA21AA1C5A863300E0FAA3 /* Assets.xcassets in Resources */,
+				9CEA21AD1C5A863300E0FAA3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA21B11C5A863300E0FAA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CEA21A01C5A863300E0FAA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA21A81C5A863300E0FAA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA21AF1C5A863300E0FAA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA21B81C5A863300E0FAA3 /* big_picture_launcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CEA21B51C5A863300E0FAA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CEA21A31C5A863300E0FAA3 /* big-picture-launcher */;
+			targetProxy = 9CEA21B41C5A863300E0FAA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CEA21AC1C5A863300E0FAA3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CEA21BA1C5A863300E0FAA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CEA21BB1C5A863300E0FAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9CEA21BD1C5A863300E0FAA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "big-picture-launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CEA21BE1C5A863300E0FAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "big-picture-launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CEA21C01C5A863300E0FAA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "big-picture-launcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-picture-launcher.app/Contents/MacOS/big-picture-launcher";
+			};
+			name = Debug;
+		};
+		9CEA21C11C5A863300E0FAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "big-picture-launcherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-picture-launcher.app/Contents/MacOS/big-picture-launcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CEA219F1C5A863300E0FAA3 /* Build configuration list for PBXProject "big-picture-launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA21BA1C5A863300E0FAA3 /* Debug */,
+				9CEA21BB1C5A863300E0FAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CEA21BC1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA21BD1C5A863300E0FAA3 /* Debug */,
+				9CEA21BE1C5A863300E0FAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CEA21BF1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA21C01C5A863300E0FAA3 /* Debug */,
+				9CEA21C11C5A863300E0FAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CEA219C1C5A863300E0FAA3 /* Project object */;
+}
