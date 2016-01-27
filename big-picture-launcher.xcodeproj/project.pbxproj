@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "big-picture-launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Picture Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CEA21AC1C5A863300E0FAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		9CEA21A51C5A863300E0FAA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */,
+				9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */,
 				9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */,
 			);
 			name = Products;
@@ -107,7 +107,7 @@
 			);
 			name = "big-picture-launcher";
 			productName = "big-picture-launcher";
-			productReference = 9CEA21A41C5A863300E0FAA3 /* big-picture-launcher.app */;
+			productReference = 9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9CEA21B21C5A863300E0FAA3 /* big-picture-launcherTests */ = {
@@ -311,8 +311,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "big-picture-launcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Big Picture Launcher";
 			};
 			name = Debug;
 		};
@@ -323,8 +324,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "big-picture-launcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Big Picture Launcher";
 			};
 			name = Release;
 		};
