@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		9CE93F161C5DA9B7008A0874 /* XboxControllerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxControllerListener.h; sourceTree = "<group>"; };
-		9CE93F171C5DAA3C008A0874 /* big-picture-launcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "big-picture-launcher-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		9CE93F171C5DAA3C008A0874 /* big-picture-launcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "big-picture-launcher-Bridging-Header.h"; path = "big-picture-launcher/big-picture-launcher-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		9CE93F181C5DAA3C008A0874 /* XboxControllerListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxControllerListener.m; sourceTree = "<group>"; };
 		9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Picture Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
 				PRODUCT_NAME = "Big Picture Launcher";
-				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/big-picture-launcher-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -339,7 +339,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
 				PRODUCT_NAME = "Big Picture Launcher";
-				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/big-picture-launcher-Bridging-Header.h";
 			};
 			name = Release;
 		};
