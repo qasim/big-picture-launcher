@@ -7,23 +7,12 @@
 //
 
 import Cocoa
-import GameController
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         ListenForControllers()
-
-        NSNotificationCenter.defaultCenter().addObserver(
-            self,
-            selector: "launchBigPicture",
-            name: "GCControllerDidConnectNotification",
-            object: nil)
-    }
-
-    func launchBigPicture() {
-        LaunchBigPicture();
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

@@ -59,15 +59,11 @@ static void DeviceConnected(void *param, io_iterator_t iterator)
 
         while ((object = IOIteratorNext(iterator)) != 0)
         {
-#if 0
-            CFStringRef bob = IOObjectCopyClass(object);
-            NSLog(@"Found %p: %@", object, bob);
-            CFRelease(bob);
-#endif
             if (IOObjectConformsTo(object, "WirelessHIDDevice") || IOObjectConformsTo(object, "Xbox360ControllerClass"))
             {
-                // Supported device - load settings
-                if (launchDate.timeIntervalSinceNow < -3) {
+                // Supported device
+                if (launchDate.timeIntervalSinceNow < -3)
+                {
                     LaunchBigPicture();
                 }
             }
@@ -91,6 +87,7 @@ static void DeviceConnected(void *param, io_iterator_t iterator)
                                 break;
                         }
 
+                        // Plug'n'charge or wireless receiver
                         if (foundWirelessReceiver && launchDate.timeIntervalSinceNow < -2) {
                             LaunchBigPicture();
                         }
@@ -106,23 +103,31 @@ void ListenForControllers()
 {
     @autoreleasepool {
         foundWirelessReceiver = NO;
-        launchDate = [[NSDate alloc] init];
+
         // Get master port, for accessing I/O Kit
         IOMasterPort(MACH_PORT_NULL,&masterPort);
+
         // Set up notification of USB device addition/removal
         notifyPort=IONotificationPortCreate(masterPort);
         notifySource=IONotificationPortGetRunLoopSource(notifyPort);
         CFRunLoopAddSource(CFRunLoopGetCurrent(),notifySource,kCFRunLoopCommonModes);
+
         // Start listening
         // USB devices
         IOServiceAddMatchingNotification(notifyPort, kIOFirstMatchNotification, IOServiceMatching(kIOUSBDeviceClassName), DeviceConnected, NULL, &onIteratorOther);
         DeviceConnected(NULL, onIteratorOther);
         // Wired 360 devices
+
         IOServiceAddMatchingNotification(notifyPort, kIOFirstMatchNotification, IOServiceMatching("Xbox360ControllerClass"), DeviceConnected, NULL, &onIteratorWired);
         DeviceConnected(NULL, onIteratorWired);
+
         // Wireless 360 devices
         IOServiceAddMatchingNotification(notifyPort, kIOFirstMatchNotification, IOServiceMatching("WirelessHIDDevice"), DeviceConnected, NULL, &onIteratorWireless);
         DeviceConnected(NULL, onIteratorWireless);
+
+        // Store current time
+        launchDate = [[NSDate alloc] init];
+
         // Run loop
         CFRunLoopRun();
     }

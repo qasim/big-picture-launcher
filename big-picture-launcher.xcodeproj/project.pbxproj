@@ -11,7 +11,6 @@
 		9CEA21A81C5A863300E0FAA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */; };
 		9CEA21AA1C5A863300E0FAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */; };
 		9CEA21AD1C5A863300E0FAA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */; };
-		9CEA21B81C5A863300E0FAA3 /* big_picture_launcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		9CE93F161C5DA9B7008A0874 /* XboxControllerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxControllerListener.h; sourceTree = "<group>"; };
-		9CE93F171C5DAA3C008A0874 /* big-picture-launcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "big-picture-launcher-Bridging-Header.h"; path = "big-picture-launcher/big-picture-launcher-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		9CE93F171C5DAA3C008A0874 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = "big-picture-launcher/BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 		9CE93F181C5DAA3C008A0874 /* XboxControllerListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxControllerListener.m; sourceTree = "<group>"; };
 		9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Picture Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +33,6 @@
 		9CEA21AC1C5A863300E0FAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9CEA21AE1C5A863300E0FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "big-picture-launcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = big_picture_launcherTests.swift; sourceTree = "<group>"; };
-		9CEA21B91C5A863300E0FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				9CEA21A61C5A863300E0FAA3 /* big-picture-launcher */,
-				9CEA21B61C5A863300E0FAA3 /* big-picture-launcherTests */,
 				9CEA21A51C5A863300E0FAA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,21 +76,12 @@
 				9CEA21A71C5A863300E0FAA3 /* AppDelegate.swift */,
 				9CE93F181C5DAA3C008A0874 /* XboxControllerListener.m */,
 				9CE93F161C5DA9B7008A0874 /* XboxControllerListener.h */,
-				9CE93F171C5DAA3C008A0874 /* big-picture-launcher-Bridging-Header.h */,
+				9CE93F171C5DAA3C008A0874 /* BridgingHeader.h */,
 				9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */,
 				9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */,
 				9CEA21AE1C5A863300E0FAA3 /* Info.plist */,
 			);
 			path = "big-picture-launcher";
-			sourceTree = "<group>";
-		};
-		9CEA21B61C5A863300E0FAA3 /* big-picture-launcherTests */ = {
-			isa = PBXGroup;
-			children = (
-				9CEA21B71C5A863300E0FAA3 /* big_picture_launcherTests.swift */,
-				9CEA21B91C5A863300E0FAA3 /* Info.plist */,
-			);
-			path = "big-picture-launcherTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CEA21B81C5A863300E0FAA3 /* big_picture_launcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +309,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
 				PRODUCT_NAME = "Big Picture Launcher";
-				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/big-picture-launcher-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -339,7 +325,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcher";
 				PRODUCT_NAME = "Big Picture Launcher";
-				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/big-picture-launcher-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "big-picture-launcher/BridgingHeader.h";
 			};
 			name = Release;
 		};
