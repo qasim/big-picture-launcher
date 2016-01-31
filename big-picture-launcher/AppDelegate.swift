@@ -7,26 +7,27 @@
 //
 
 import Cocoa
+import GameController
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        ListenForControllers()
+
         NSNotificationCenter.defaultCenter().addObserver(
             self,
-            selector: "controllerDidConnect",
+            selector: "launchBigPicture",
             name: "GCControllerDidConnectNotification",
             object: nil)
     }
 
-    func controllerDidConnect() {
-        // TODO: Launch Big Picture
+    func launchBigPicture() {
+        LaunchBigPicture();
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-
+        StopListeningForControllers()
     }
 
 }
