@@ -47,10 +47,6 @@ static io_iterator_t offIteratorWireless;
 static BOOL foundWirelessReceiver;
 static NSDate *launchDate;
 
-enum {
-    kaPlugNCharge = 0,
-};
-
 // Supported device - connecting - set settings?
 static void DeviceConnected(void *param, io_iterator_t iterator)
 {
