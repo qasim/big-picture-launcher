@@ -6,7 +6,7 @@
 //  Copyright © 2016 Qasim Iqbal. All rights reserved.
 //
 //  This file is a modified version of
-//  github.com/360Controller/360Controller/blob/master/360Daemon/360Daemon.m.
+//  github.com/360Controller/360Controller/tree/master/360Daemon/360Daemon.m.
 //
 //  MICE Xbox 360 Controller driver for Mac OS X
 //  Copyright (C) 2006-2013 Colin Munro
