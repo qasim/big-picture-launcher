@@ -13,16 +13,6 @@
 		9CEA21AD1C5A863300E0FAA3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9CEA21B41C5A863300E0FAA3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CEA219C1C5A863300E0FAA3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9CEA21A31C5A863300E0FAA3;
-			remoteInfo = "big-picture-launcher";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9CE93F161C5DA9B7008A0874 /* XboxControllerListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxControllerListener.h; sourceTree = "<group>"; };
 		9CE93F171C5DAA3C008A0874 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = "big-picture-launcher/BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
@@ -32,18 +22,10 @@
 		9CEA21A91C5A863300E0FAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CEA21AC1C5A863300E0FAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9CEA21AE1C5A863300E0FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "big-picture-launcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9CEA21A11C5A863300E0FAA3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CEA21B01C5A863300E0FAA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */,
-				9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,24 +85,6 @@
 			productReference = 9CEA21A41C5A863300E0FAA3 /* Big Picture Launcher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CEA21B21C5A863300E0FAA3 /* big-picture-launcherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CEA21BF1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcherTests" */;
-			buildPhases = (
-				9CEA21AF1C5A863300E0FAA3 /* Sources */,
-				9CEA21B01C5A863300E0FAA3 /* Frameworks */,
-				9CEA21B11C5A863300E0FAA3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9CEA21B51C5A863300E0FAA3 /* PBXTargetDependency */,
-			);
-			name = "big-picture-launcherTests";
-			productName = "big-picture-launcherTests";
-			productReference = 9CEA21B31C5A863300E0FAA3 /* big-picture-launcherTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,10 +97,6 @@
 				TargetAttributes = {
 					9CEA21A31C5A863300E0FAA3 = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					9CEA21B21C5A863300E0FAA3 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 9CEA21A31C5A863300E0FAA3;
 					};
 				};
 			};
@@ -155,7 +114,6 @@
 			projectRoot = "";
 			targets = (
 				9CEA21A31C5A863300E0FAA3 /* big-picture-launcher */,
-				9CEA21B21C5A863300E0FAA3 /* big-picture-launcherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -167,13 +125,6 @@
 			files = (
 				9CEA21AA1C5A863300E0FAA3 /* Assets.xcassets in Resources */,
 				9CEA21AD1C5A863300E0FAA3 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CEA21B11C5A863300E0FAA3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,22 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CEA21AF1C5A863300E0FAA3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9CEA21B51C5A863300E0FAA3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9CEA21A31C5A863300E0FAA3 /* big-picture-launcher */;
-			targetProxy = 9CEA21B41C5A863300E0FAA3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9CEA21AB1C5A863300E0FAA3 /* MainMenu.xib */ = {
@@ -329,32 +265,6 @@
 			};
 			name = Release;
 		};
-		9CEA21C01C5A863300E0FAA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "big-picture-launcherTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcherTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-picture-launcher.app/Contents/MacOS/big-picture-launcher";
-			};
-			name = Debug;
-		};
-		9CEA21C11C5A863300E0FAA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "big-picture-launcherTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.qas.big-picture-launcherTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/big-picture-launcher.app/Contents/MacOS/big-picture-launcher";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -372,15 +282,6 @@
 			buildConfigurations = (
 				9CEA21BD1C5A863300E0FAA3 /* Debug */,
 				9CEA21BE1C5A863300E0FAA3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CEA21BF1C5A863300E0FAA3 /* Build configuration list for PBXNativeTarget "big-picture-launcherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9CEA21C01C5A863300E0FAA3 /* Debug */,
-				9CEA21C11C5A863300E0FAA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
